@@ -1,0 +1,164 @@
+%Para melhor utilização da ferramenta, utilize o pdfLaTeX+MakeIndex+BibTeX%
+\documentclass[article,12pt,oneside,a4paper,english,brazil]{unifil}
+
+\DeclareUnicodeCharacter{00A0}{ }
+
+% Caso queira usar um diretório diferente pra imagem, tire o comentário da proxima linha 
+% \graphicspath{ {/home/hug/MonografeArq/}}
+\titulo{Título do artigo científico \\ 
+\fontsize{12}{14}\selectfont Subtítulo ou título em inglês}
+\autor{Seu nome aqui\thanks{Centro Universitário Filadélfia de Londrina - UniFil}
+\\Nome orientador\thanks{Centro Universitário Filadélfia de Londrina - UniFil}}
+\instituicao{Centro Universitário Filadélfia}
+\local{Londrina}
+\predate{}
+\postdate{}
+\date{}
+
+\makeatletter
+\let\@fnsymbol\@arabic
+\makeatother
+
+\usepackage{caption}
+\captionsetup[figure]{slc=off}
+
+\usepackage{titling}
+\setlength{\droptitle}{-3cm}
+\preauthor{\begin{flushright}
+\large \lineskip 0.5em%
+}
+\postauthor{\end{flushright}}
+
+\usepackage{graphicx}
+\usepackage{titlesec}
+\titleformat{\section}
+{\normalfont\fontsize{14}{15}\bfseries}{\thesection}{1em}{}
+
+\SingleSpacing
+
+\begin{document}
+\frenchspacing
+\maketitle
+\normalsize
+
+\fontsize{10}{1}\selectfont
+\section*{Resumo}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum dictum tempus. Aliquam vel pharetra mi. Sed suscipit eros volutpat, suscipit magna ut, accumsan ligula. Maecenas sit amet blandit lorem. Nam venenatis scelerisque magna eu dignissim. Integer elit libero, aliquam vel laoreet ac, vehicula vitae velit. In ac magna nisl. Vestibulum vestibulum urna sed lacus dignissim sollicitudin eget quis magna. Donec ut volutpat ex. Integer congue tellus leo, at placerat purus finibus eu. Etiam lacinia ullamcorper bibendum. Curabitur sollicitudin ex eget neque pellentesque, vel sollicitudin lorem sagittis. Suspendisse risus mauris, tristique eget fermentum id, porttitor sed orci. Integer ut felis vitae mi ullamcorper placerat vitae id purus. Proin feugiat volutpat enim vel sagittis. Morbi porttitor tristique ante, eleifend faucibus purus fringilla mollis.\\
+\vspace{\onelineskip} \\
+\noindent
+\textbf{Palavras-chave}: Exemplo; LaTeX; Artigo; Unifil.
+
+
+
+\section*{Abstract}
+\begin{otherlanguage*}{english}
+%resumo em ingles%
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum dictum tempus. Aliquam vel pharetra mi. Sed suscipit eros volutpat, suscipit magna ut, accumsan ligula. Maecenas sit amet blandit lorem. Nam venenatis scelerisque magna eu dignissim. Integer elit libero, aliquam vel laoreet ac, vehicula vitae velit. In ac magna nisl. Vestibulum vestibulum urna sed lacus dignissim sollicitudin eget quis magna. Donec ut volutpat ex. Integer congue tellus leo, at placerat purus finibus eu. Etiam lacinia ullamcorper bibendum. Curabitur sollicitudin ex eget neque pellentesque, vel sollicitudin lorem sagittis. Suspendisse risus mauris, tristique eget fermentum id, porttitor sed orci. Integer ut felis vitae mi ullamcorper placerat vitae id purus. Proin feugiat volutpat enim vel sagittis. Morbi porttitor tristique ante, eleifend faucibus purus fringilla mollis.\\
+\vspace{\onelineskip}\\
+\noindent
+\textbf{Keywords}: Example; LaTeX; Article; Unifil.
+\end{otherlanguage*}
+
+%texto%
+\textual
+\fontsize{12}{7}\selectfont
+\begin{Spacing}{1.5}
+
+\section*{INTRODUÇÃO}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum dictum tempus. Aliquam vel pharetra mi. Sed suscipit eros volutpat, suscipit magna ut, accumsan ligula. Maecenas sit amet blandit lorem. Nam venenatis scelerisque magna eu dignissim. Integer elit libero, aliquam vel laoreet ac, vehicula vitae velit. In ac magna nisl. Vestibulum vestibulum urna sed lacus dignissim sollicitudin eget quis magna. Donec ut volutpat ex. Integer congue tellus leo, at placerat purus finibus eu. Etiam lacinia ullamcorper bibendum. Curabitur sollicitudin ex eget neque pellentesque, vel sollicitudin lorem sagittis. Suspendisse risus mauris, tristique eget fermentum id, porttitor sed orci. Integer ut felis vitae mi ullamcorper placerat vitae id purus. Proin feugiat volutpat enim vel sagittis. Morbi porttitor tristique ante, eleifend faucibus purus fringilla mollis.
+
+Mauris blandit nisl justo, varius laoreet tortor hendrerit sed. Nulla faucibus ornare mi, eu porttitor massa dapibus eget. Etiam tempor dui id diam rhoncus, ac maximus risus imperdiet. Vestibulum ac condimentum tellus. Aliquam ac lorem et lorem dictum sagittis ut a justo. Integer sed sodales neque. Aliquam elementum velit eget magna vehicula, sit amet cursus orci sollicitudin. Vestibulum efficitur, velit quis placerat suscipit, enim est elementum mi, vitae suscipit purus risus ut orci. Mauris in interdum velit, lacinia consectetur metus. In suscipit maximus orci sed interdum.
+
+% exemplo de figura %
+\begin{figure}[!h]
+\caption{título da imagem}
+\centering
+\includegraphics[width=\textwidth]{fig1.png}
+\legend{\fontsize{8}{1}\selectfont
+Fonte: Exemplo de figura, 20xx}
+\end{figure}
+
+Quisque vestibulum dui vitae nisi cursus, et viverra nibh luctus. Phasellus vitae dapibus dui, non venenatis risus. Mauris non pellentesque felis, feugiat bibendum nisi. Quisque lacinia molestie mi non accumsan. Curabitur eget facilisis leo, eu ornare sapien. Suspendisse sollicitudin odio suscipit ultrices blandit. Suspendisse metus velit, lobortis id urna non, faucibus efficitur lorem.
+
+\section*{PROXIMO CAPITULO}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum dictum tempus. Aliquam vel pharetra mi. Sed suscipit eros volutpat, suscipit magna ut, accumsan ligula. Maecenas sit amet blandit lorem. Nam venenatis scelerisque magna eu dignissim. Integer elit libero, aliquam vel laoreet ac, vehicula vitae velit. In ac magna nisl. Vestibulum vestibulum urna sed lacus dignissim sollicitudin eget quis magna. Donec ut volutpat ex. Integer congue tellus leo, at placerat purus finibus eu. Etiam lacinia ullamcorper bibendum. Curabitur sollicitudin ex eget neque pellentesque, vel sollicitudin lorem sagittis. Suspendisse risus mauris, tristique eget fermentum id, porttitor sed orci. Integer ut felis vitae mi ullamcorper placerat vitae id purus. Proin feugiat volutpat enim vel sagittis. Morbi porttitor tristique ante, eleifend faucibus purus fringilla mollis.
+
+Mauris blandit nisl justo, varius laoreet tortor hendrerit sed. Nulla faucibus ornare mi, eu porttitor massa dapibus eget. Etiam tempor dui id diam rhoncus, ac maximus risus imperdiet. Vestibulum ac condimentum tellus. Aliquam ac lorem et lorem dictum sagittis ut a justo. Integer sed sodales neque. Aliquam elementum velit eget magna vehicula, sit amet cursus orci sollicitudin. Vestibulum efficitur, velit quis placerat suscipit, enim est elementum mi, vitae suscipit purus risus ut orci. Mauris in interdum velit, lacinia consectetur metus. In suscipit maximus orci sed interdum.
+
+Quisque vestibulum dui vitae nisi cursus, et viverra nibh luctus. Phasellus vitae dapibus dui, non venenatis risus. Mauris non pellentesque felis, feugiat bibendum nisi. Quisque lacinia molestie mi non accumsan. Curabitur eget facilisis leo, eu ornare sapien. Suspendisse sollicitudin odio suscipit ultrices blandit. Suspendisse metus velit, lobortis id urna non, faucibus efficitur lorem.
+
+Nulla fringilla convallis tortor, a fringilla massa vehicula sed. Nulla interdum egestas lacus. Duis sit amet ornare erat. Nullam eget luctus quam, vitae venenatis diam. Sed massa ligula, tristique et ultrices sit amet, luctus sed tortor. Ut suscipit lorem eu ex ultricies, nec malesuada diam ultricies. Duis accumsan elementum nibh, vitae malesuada mi pellentesque nec. Donec condimentum tortor a sodales sodales. Etiam ut aliquam nisi. Donec eleifend, massa vel sollicitudin posuere, quam libero pharetra enim, pharetra eleifend justo urna at arcu. Pellentesque id imperdiet felis. Sed vel orci eu metus semper vulputate. Curabitur cursus magna a augue viverra, eu posuere nisl ullamcorper. Nullam rutrum vestibulum nunc, non aliquam massa elementum consequat.
+
+\section*{CONCLUSÃO}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum dictum tempus. Aliquam vel pharetra mi. Sed suscipit eros volutpat, suscipit magna ut, accumsan ligula. Maecenas sit amet blandit lorem. Nam venenatis scelerisque magna eu dignissim. Integer elit libero, aliquam vel laoreet ac, vehicula vitae velit. In ac magna nisl. Vestibulum vestibulum urna sed lacus dignissim sollicitudin eget quis magna. Donec ut volutpat ex. Integer congue tellus leo, at placerat purus finibus eu. Etiam lacinia ullamcorper bibendum. Curabitur sollicitudin ex eget neque pellentesque, vel sollicitudin lorem sagittis. Suspendisse risus mauris, tristique eget fermentum id, porttitor sed orci. Integer ut felis vitae mi ullamcorper placerat vitae id purus. Proin feugiat volutpat enim vel sagittis. Morbi porttitor tristique ante, eleifend faucibus purus fringilla mollis.
+
+Mauris blandit nisl justo, varius laoreet tortor hendrerit sed. Nulla faucibus ornare mi, eu porttitor massa dapibus eget. Etiam tempor dui id diam rhoncus, ac maximus risus imperdiet. Vestibulum ac condimentum tellus. Aliquam ac lorem et lorem dictum sagittis ut a justo. Integer sed sodales neque. Aliquam elementum velit eget magna vehicula, sit amet cursus orci sollicitudin. Vestibulum efficitur, velit quis placerat suscipit, enim est elementum mi, vitae suscipit purus risus ut orci. Mauris in interdum velit, lacinia consectetur metus. In suscipit maximus orci sed interdum.
+
+\begin{citacao}
+Quisque vestibulum dui vitae nisi cursus, et viverra nibh luctus. Phasellus vitae dapibus dui, non venenatis risus. Mauris non pellentesque felis, feugiat bibendum nisi. Quisque lacinia molestie mi non accumsan. Curabitur eget facilisis leo, eu ornare sapien. Suspendisse sollicitudin odio suscipit ultrices blandit. Suspendisse metus velit, lobortis id urna non, faucibus efficitur lorem.
+\end{citacao}
+
+Nulla fringilla convallis tortor, a fringilla massa vehicula sed. Nulla interdum egestas lacus. Duis sit amet ornare erat. Nullam eget luctus quam, vitae venenatis diam. Sed massa ligula, tristique et ultrices sit amet, luctus sed tortor. Ut suscipit lorem eu ex ultricies, nec malesuada diam ultricies. Duis accumsan elementum nibh, vitae malesuada mi pellentesque nec. Donec condimentum tortor a sodales sodales. Etiam ut aliquam nisi. Donec eleifend, massa vel sollicitudin posuere, quam libero pharetra enim, pharetra eleifend justo urna at arcu. Pellentesque id imperdiet felis. Sed vel orci eu metus semper vulputate. Curabitur cursus magna a augue viverra, eu posuere nisl ullamcorper. Nullam rutrum vestibulum nunc, non aliquam massa elementum consequat.
+
+\end{Spacing}
+\postextual
+
+% bibliografia %
+\begin{thebibliography}{99}
+
+\bibitem{}
+{BALLOU, R. \textbf{Logística empresarial}: transportes, administração de materiais e distribuição física. Atlas. São Paulo. 2012. }
+
+\bibitem{}
+{BARNES, R. \textbf{Estudos de movimentos e tempos}. Blucher. São Paulo. 1977. }
+
+\bibitem{}
+{BATISTA DE DEUS, J. C.; SILVA, W. P.; SOARES, G. J. D. Efeito da distância de transporte de bovinos no metabolismo post mortem. \textbf{Revista Brasileira de Agrociência}, v. 5, n. 2, p.152-156, maio/ago. 1999. }
+
+\bibitem{}
+{COYLE, J. J.; BARDI, E.J; LANGLEY JUNIOR, C. J.; The management of business logistics. Saint Paul: West Publishing, 1992. }
+
+\bibitem{}
+{FLEURY, Paulo Fernando; WANKE, Peter; FIGUEIREDO, Kleber F. \textbf{Logística empresarial}. São Paulo: Editora Atlas, 2000. }
+
+\bibitem{}
+{MARTINS, P. G.; LAUGENI, F. P. \textbf{Administração da produção}. 2. ed. São Paulo: Saraiva, 2006. }
+
+\bibitem{}
+{MOREIRA, D. A. \textbf{Administração da produção e operações}. 5 ed. São Paulo: Pioneira, 2000. }
+
+\bibitem{}
+{MOURA, R. A. \textbf{Sistema e técnicas de movimentação e armazenagem de materiais}. volume 1. São Paulo: IMAM, 2005. }
+
+\bibitem{}
+{MUTHER, Richard. \textbf{Planejamento do layout}: Sistema SLP. São Paulo: Edgard Blucher, 1986. }
+
+\bibitem{}
+{PEINADO, J.; GRAEML, A. R. \textbf{Administração da produção}: operações industriais e de serviços. Curitiba : UnicenP, 2007. }
+
+\bibitem{}
+{POZO, Hamilton. \textbf{Administração de recursos materiais e patrimoniais}: uma abordagem logística. São Paulo: Atlas, 2010. }
+
+\bibitem{}
+{SLACK, N. et al. \textbf{Administração da produção}. São Paulo: Atlas, 1999. }
+
+\bibitem{}
+{SHINGO, Shigeo. \textbf{O Sistema Toyota de produção do ponto de vista da engenharia de produção}. Porto Alegre: Artes Médicas, 1996. }
+
+\bibitem{}
+{SOUZA, Jader. \textbf{Gestão empresarial}: administrando empresas vencedoras. São Paulo, 2006. }
+
+\bibitem{}
+{COSTA, M. A. Armazenagem e expedição. 2011. <www.logisticadescomplicada.com/armazenagem-e-expedicao/>. Acesso em 31/05/2016. <http://www.suinoculturaindustrial.com.br/> Acesso em 13/06/2016. }
+
+\bibitem{}
+{REZENDE, A. C. S. Logística de distribuição de alimentos perecíveis. 2010. <http://www.guialog.com.br/artigo/Y689.htm>. Acesso em 05/06/2016. }
+
+\bibitem{}
+{MINISTÉRIO DA AGRICULTURA. Disponível em: <https://sistemasdeproducao.cnptia.embrapa.br> Acesso em: 16/05/2016. <www.solucoestransportes.com.br/blog/transporte-de-alimentos-e-responsabilidade-com-a-vida/> Acesso em 05/06/2016.}
+
+\end{thebibliography}
+\end{document}

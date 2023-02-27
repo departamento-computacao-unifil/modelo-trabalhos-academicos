@@ -1,0 +1,70 @@
+\chapter{Elementos Textuais}
+
+Sempre escrevam um parágrafo inicial, introduzindo o capítulo e os temas tratados. Por exemplo, neste capítulo são vistos alguns exemplos referentes aos comandos do \LaTeX  para utilizar as citações, gerar lista enumerada e com marcadores, tabelas, figuras e etc.
+
+\section{Usando referências}
+
+Todo o texto gerado neste exemplo de trabalho de conclusão de curso é \textit{lorem ipsum} que foi desenvolvido por \citeauthor{lipsum2014}. \cite{lipsum2014}
+
+Para maiores dúvidas, acessem: https://en.wikibooks.org/wiki/LaTeX/. Este site tem muita informação sobre o \LaTeX  e seus comandos.
+
+\lipsum[1]\cite{Yang2017}
+
+\lipsum[1]\cite{alkassebeh2009}
+
+\section{Lista Numerada}
+
+\begin{enumerate}
+ \item Item 1;
+ \item Item 2;
+ \item Item 3;
+ \item Item 4;
+ \item Item 5...
+\end{enumerate}
+
+\section{Lista com Marcadores}
+
+\begin{itemize}
+ \item Item A;
+ \item Item B;
+ \item Item C;
+ \item Item D...
+\end{itemize}
+
+\section{Figura}
+
+\begin{figure}[htb]
+	\centering
+    \includegraphics[scale=0.20]{./072-old-computer} %Insira o nome da imagem dentro das chaves
+	\caption{``Old computer''} 
+\end{figure}
+
+\begin{table}[htb]
+\caption{Legenda para quadros e tabelas em cima}
+\begin{tabular}{|c|c|c|}
+\hline
+a1 & b1 & c1 \\ \hline
+a2 & b2 & c2 \\ \hline
+a3 & b3 & c3 \\ \hline
+a4 & b4 & c4 \\ \hline
+\end{tabular}
+\end{table}
+
+Para quadros, utilize a mesma estrutura de tabelas, só que altere a sua formatação.
+\begin{quadro}[htb]
+\caption{\label{quadro_modelo}Legenda do quadro}
+\begin{tabular}{ c c c }
+a1 & b1 & c1 \\ 
+a2 & b2 & c2 \\ 
+a3 & b3 & c3 \\ 
+a4 & b4 & c4 \\ 
+\end{tabular}
+\end{quadro}
+
+\section{Paragrafação}
+O primeiro parágrafo já é indentado. Para pular uma linha, deve-se colocar duas barras invertidas \textbackslash \textbackslash. \\
+\indent Para indentar um novo parágrafo, inicie-o com \textbackslash indent.\\
+\noindent Para iniciar um parágrafo sem indentação, é so utilizar \textbackslash noindent
+
+\section{Nota de Rodapé}
+Para utilizar a nota de rodapé, é só utilizar a marcação \textbackslash footnote na frente do seu texto. \footnote{Exemplo de nota de rodapé.} Ele numera automaticamente as notas. \footnote{Outra nota de rodapé.}

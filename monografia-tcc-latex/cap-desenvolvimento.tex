@@ -1,0 +1,93 @@
+\chapter{Outros Elementos}
+
+\section{Código-Fonte}
+%É possível alterar a linguagem do código utilizando \lstset{language=nomedalinguagem}
+\begin{lstlisting}
+/* Block
+    comment */
+public class Exemplo
+{
+
+ public static void main(String args[])
+ {
+    int i;
+ 
+    // Line comment.
+    System.out.println("Hello world!");
+ 
+    for (i = 0; i < 1; i++)
+    {
+        System.out.println("LaTeX is also great for programmers!");
+    }
+ }
+}
+\end{lstlisting}
+
+\section{Termos Matemáticos}
+
+\begin{equation} 
+\label{eq:equacao} %Título da equacao
+5^2 - 5 = 20
+\end{equation}
+
+Descrição da equação \ref{eq:equacao}.
+
+\noindent $\forall x \in X, \quad \exists y \leq \epsilon$
+\\
+$\cos (2\theta) = \cos^2 \theta - \sin^2 \theta$
+\\
+$\lim_{x \to \infty} \exp(-x) = 0$
+\\
+$a \bmod b$
+\\
+$x \equiv a \pmod b$
+\\
+$f(n) = n^5 + 4n^2 + 2 |_{n=17}$
+\\
+$\frac{n!}{k!(n-k)!} = \binom{n}{k}$
+\\
+$\sum_{i=1}^{10} t_i$
+\\
+$\int\limits_a^b$
+
+\section{Gráficos Químicos}
+
+\chemfig{(-[:0,1.5,,,draw=none]\scriptstyle\color{red}0)
+(-[1]1)(-[:45,1.5,,,draw=none]\scriptstyle\color{red}45)
+(-[2]2)(-[:90,1.5,,,draw=none]\scriptstyle\color{red}90)
+(-[3]3)(-[:135,1.5,,,draw=none]\scriptstyle\color{red}135)
+(-[4]4)(-[:180,1.5,,,draw=none]\scriptstyle\color{red}180)
+(-[5]5)(-[:225,1.5,,,draw=none]\scriptstyle\color{red}225)
+(-[6]6)(-[:270,1.5,,,draw=none]\scriptstyle\color{red}270)
+(-[7]7)(-[:315,1.5,,,draw=none]\scriptstyle\color{red}315)
+-0} \\
+
+\chemfig{A-B}\\
+\chemfig{A=B}\\
+\chemfig{A~B}\\
+\chemfig{A>B}\\
+\chemfig{A<B}\\
+\chemfig{A>:B}\\
+\chemfig{A<:B}\\
+\chemfig{A>|B}\\
+\chemfig{A<|B}\\
+
+\chemfig{C(-[:0]H)(-[:90]H)(-[:180]H)(-[:270]H)} \\
+
+\chemfig{-[:30]-[:-30]-[:30]} \\
+
+\chemfig{-[:30]=[:-30]-[:30]} \\
+
+\chemfig{A*6(-B-C-D-E-F-)} \\
+
+\chemfig{A*5(-B-C-D-E-)} \\
+
+\chemfig{*6(=-=-=-)} \\ 
+
+\chemfig{**5(------)} \\
+
+\chemfig{-(-[1]O^{-})=[7]O} \\
+
+\chemfig{-(-[1]O^{\ominus})=[7]O} \\
+
+\chemfig{-\chemabove{N}{\scriptstyle\oplus}(=[1]O)-[7]O^{\ominus}}
